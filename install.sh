@@ -31,11 +31,11 @@ rm Hack.zip
 
 # font for alacritty
 wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
-unzip 0cef8205-ubuntu-font-family-*.zip
+unzip 0cef8205-ubuntu-font-family-0.83.zip
 
-sudo mv 0cef8205-ubuntu-font-family-*/ /usr/share/fonts
+sudo mv 0cef8205-ubuntu-font-family-0.83/ /usr/share/fonts
 
-rm 0cef8205-ubuntu-font-family-*.zip
+rm 0cef8205-ubuntu-font-family-0.83.zip
 
 # wallpaper
 sudo cp wallpaper.jpeg /usr/share/backgrounds
