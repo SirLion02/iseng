@@ -11,7 +11,7 @@ sudo dnf update --refresh -y
 sudo dnf install --allowerasing i3-gaps
 
 # install additional package
-sudo dnf install thunar htop neofetch neovim light picom lxappearance alacrity polybar nitrogen flameshot ffmpeg-libs rofi
+sudo dnf install thunar htop neofetch neovim light picom lxappearance alacritty polybar nitrogen flameshot ffmpeg-libs rofi
 
 #cd dotfiles/
 cp -v i3/ ~/.config/
