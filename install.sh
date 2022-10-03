@@ -14,7 +14,10 @@ sudo dnf install --allowerasing i3-gaps
 sudo dnf install thunar htop neofetch neovim light picom lxappearance alacrity polybar nitrogen flameshot ffmpeg-libs rofi
 
 #cd dotfiles/
-cp -rv i3/ alacritty/ polybar/ .config/
+cp -v i3/ ~/.config/
+cp -v alacritty/ ~/.config/
+cp -v polybar/ ~/.config/
+chmod +x ~/.config/polybar/polybar-launch.sh
 
 # Font for polybar
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
@@ -30,12 +33,12 @@ rm FiraCode.zip
 rm Hack.zip
 
 # font for alacritty
-wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
-unzip 0cef8205-ubuntu-font-family-0.83.zip
+wget https://assets.ubuntu.com/v1/ubuntu-font-family-0.83.zip
+unzip ubuntu-font-family-0.83.zip
 
-sudo mv 0cef8205-ubuntu-font-family-0.83/ /usr/share/fonts
+sudo mv ubuntu-font-family-0.83/ /usr/share/fonts
 
-rm 0cef8205-ubuntu-font-family-0.83.zip
+rm ubuntu-font-family-0.83.zip
 
 # wallpaper
 sudo cp wallpaper.jpeg /usr/share/backgrounds
