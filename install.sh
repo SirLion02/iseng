@@ -18,6 +18,7 @@ cp -v i3/ ~/.config/
 cp -v alacritty/ ~/.config/
 cp -v polybar/ ~/.config/
 chmod +x ~/.config/polybar/polybar-launch.sh
+chmod +x ~/.config/i3/volume-max-100.sh
 
 # Font for polybar
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
@@ -33,9 +34,6 @@ rm FiraCode.zip
 rm Hack.zip
 
 # font for alacritty
-wget https://assets.ubuntu.com/v1/ubuntu-font-family-0.83.zip
-unzip ubuntu-font-family-0.83.zip
-
 sudo mv ubuntu-font-family-0.83/ /usr/share/fonts
 
 rm ubuntu-font-family-0.83.zip
