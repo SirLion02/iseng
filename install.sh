@@ -25,8 +25,8 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.z
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip
 
 mkdir Nerd\ Fonts
-unzip FiraCode.zip -d Nerd\ Fonts -y
-unzip Hack.zip -d Nerd\ Fonts -y
+unzip FiraCode.zip -d Nerd\ Fonts
+unzip Hack.zip -d Nerd\ Fonts -A
 
 sudo mv Nerd\ Fonts /usr/share/fonts
 
@@ -35,8 +35,6 @@ rm Hack.zip
 
 # font for alacritty
 sudo mv ubuntu-font-family-0.83/ /usr/share/fonts
-
-rm ubuntu-font-family-0.83.zip
 
 # wallpaper
 sudo cp wallpaper.jpeg /usr/share/backgrounds
