@@ -8,10 +8,10 @@ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfre
 sudo dnf update --refresh -y
 
 # install i3-gaps
-sudo dnf install --allowerasing i3-gaps
+sudo dnf install --allowerasing i3-gaps -y
 
 # install additional package
-sudo dnf install thunar htop neofetch neovim light picom lxappearance alacritty polybar nitrogen flameshot ffmpeg-libs rofi
+sudo dnf install thunar htop neofetch neovim light picom lxappearance alacritty polybar nitrogen flameshot ffmpeg-libs rofi -y
 
 #cd dotfiles/
 cp -v i3/ ~/.config/
@@ -25,8 +25,8 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.z
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip
 
 mkdir Nerd\ Fonts
-unzip FiraCode.zip -d Nerd\ Fonts
-unzip Hack.zip -d Nerd\ Fonts
+unzip FiraCode.zip -d Nerd\ Fonts -y
+unzip Hack.zip -d Nerd\ Fonts -y
 
 sudo mv Nerd\ Fonts /usr/share/fonts
 
@@ -42,10 +42,10 @@ rm ubuntu-font-family-0.83.zip
 sudo cp wallpaper.jpeg /usr/share/backgrounds
 
 # install brave browser
-sudo dnf install dnf-plugins-core
+sudo dnf install dnf-plugins-core -y
 
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
-sudo dnf install brave-browser
+sudo dnf install brave-browser -y
