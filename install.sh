@@ -14,9 +14,9 @@ sudo dnf install --allowerasing i3-gaps -y
 sudo dnf install thunar htop neofetch neovim light picom lxappearance alacritty polybar nitrogen flameshot ffmpeg-libs rofi -y
 
 #cd dotfiles/
-cp -v i3/ ~/.config/
-cp -v alacritty/ ~/.config/
-cp -v polybar/ ~/.config/
+cp -rv i3/ ~/.config/
+cp -rv alacritty/ ~/.config/
+cp -rv polybar/ ~/.config/
 chmod +x ~/.config/polybar/polybar-launch.sh
 chmod +x ~/.config/i3/volume-max-100.sh
 
