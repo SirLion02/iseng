@@ -38,6 +38,9 @@ sudo mv ubuntu-font-family-0.83/ /usr/share/fonts
 
 # wallpaper
 sudo cp wallpaper.jpeg /usr/share/backgrounds
+sudo cp mountain1.jpg /usr/share/backgrounds
+sudo cp mountain2.jpg /usr/share/backgrounds
+sudo cp mountain3.jpg /usr/share/backgrounds
 
 # install brave browser
 sudo dnf install dnf-plugins-core -y
